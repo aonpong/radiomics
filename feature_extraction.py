@@ -86,37 +86,7 @@ def histo(image):
         a_sd10 = np.std(pt10)
         a_sd25 = np.std(pt25)
         a_sd50 = np.std(pt50)
-        #result.append(np.append(np.array([a_mean, a_std, a_kurtosis, a_skew, a_mean10, a_mean25, a_mean50, a_sd10, a_sd25, a_sd50]), []))
-        if math.isnan(a_mean) is True:
-            a_mean = 0.
-        result.append(a_mean)
-        if math.isnan(a_std) is True:
-            a_std = 0.
-        result.append(a_std)
-        if math.isnan(a_kurtosis) is True:
-            a_kurtosis = 0.
-        result.append(a_kurtosis)
-        if math.isnan(a_skew) is True:
-            a_skew = 0.
-        result.append(a_skew)
-        if math.isnan(a_mean10) is True:
-            a_mean10 = 0.
-        result.append(a_mean10)
-        if math.isnan(a_mean25) is True:
-            a_mean25 = 0.
-        result.append(a_mean25)
-        if math.isnan(a_mean50) is True:
-            a_mean50 = 0.
-        result.append(a_mean50)
-        if math.isnan(a_sd10) is True:
-            a_sd10 = 0.
-        result.append(a_sd10)
-        if math.isnan(a_sd25) is True:
-            a_sd25 = 0.
-        result.append(a_sd25)
-        if math.isnan(a_sd50) is True:
-            a_sd50 = 0.
-        result.append(a_sd50)
+        result.append(np.append(np.array([a_mean, a_std, a_kurtosis, a_skew, a_mean10, a_mean25, a_mean50, a_sd10, a_sd25, a_sd50]), []))
 
     print(result)
     return np.array(result)
